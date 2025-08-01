@@ -1,5 +1,4 @@
 
-/* Base CSS */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -91,7 +90,7 @@ button {
 }
 
 .icon-zona {
-  font-size: 3rem; /* tamanho do ícone */
+  font-size: 3rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
