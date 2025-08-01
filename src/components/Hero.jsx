@@ -3,8 +3,11 @@ import React from 'react';
 function Hero() {
   return (
     <section id="hero" className="hero">
-      <h1> Beleza com proposito! <br /><span>Pâmella Borba</span></h1>
-      <p>Maquiadora Profissional</p>
+      <h1>
+        Pâmella Borba <br />
+        <span>Beleza com propósito!</span>
+      </h1>      
+      <a href="#portfolio" className="btn-hero">Conheça meu trabalho</a>
     </section>
   );
 }

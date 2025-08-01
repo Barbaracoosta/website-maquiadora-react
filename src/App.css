@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -14,6 +13,7 @@ header {
 }
 .logo {
   height: 60px;
+  border-radius: 50px;
 }
 nav a {
   position: relative;
@@ -35,14 +35,7 @@ nav a:hover {
   border-radius: 20px;
   text-decoration: none;
 }
-#hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: #f3d1f4;
-}
-#hero h1 span {
-  color: #a450d2;
-}
+
 section {
   padding: 3rem 2rem;
   text-align: center;
@@ -253,3 +246,114 @@ footer {
 }
 .glitter-dot:nth-child(2) { animation-delay: 0.2s; }
 .glitter-dot:nth-child(3) { animation-delay: 0.4s; }
+
+#sobre.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #fce4f7;
+  flex-wrap: wrap;
+}
+
+.texto-sobre {
+  max-width: 500px;
+  text-align: left;
+}
+
+.texto-sobre h2 {
+  font-size: 2.5rem;
+  color: #a450d2;
+  margin-bottom: 1rem;
+}
+
+.texto-sobre p {
+  font-size: 1.2rem;
+  color: #070707;
+  line-height: 1.6;
+}
+
+.foto-sobre {
+  position: relative;
+  padding: 10px;
+  background: linear-gradient(145deg, #a450d2, #ffb6c1);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(196, 145, 224, 0.929);
+  transition: transform 0.4s ease-in-out;
+}
+
+.foto-sobre::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background: linear-gradient(135deg, #a450d2, #ffb6c1);
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.foto-sobre img {
+  display: block;
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.foto-sobre img:hover {
+  transform: scale(1.02);
+}
+
+/* Hero */
+.hero {
+  padding: 15.5rem 5rem;
+  background: linear-gradient(to right, #f7e2ea, #ecb7f6);
+  text-align: center;
+  color: #a450d2;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #050008;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #050008;
+}
+.btn-hero {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #a450d2;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 5px 15px rgba(164, 80, 210, 0.3);
+}
+
+.btn-hero:hover {
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
+  color: white;
+  box-shadow: 0 0 10px #ffb6c1, 0 0 20px #a450d2;
+  transition: 0.4s ease;
+}
