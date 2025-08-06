@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Sobre from './components/Sobre';
@@ -7,6 +9,10 @@ import Servicos from './components/Servicos';
 import Cursos from './components/Cursos';
 import Contato from './components/Contato';
 import Footer from './components/Footer';
+
+import GaleriaFotos from './pages/GaleriaFotos';
+import GaleriaVideos from './pages/GaleriaVideos';
+
 import './App.css';
 
 function App() {
@@ -27,16 +33,29 @@ function App() {
   }
 
   return (
-    <>
+    <Router>
       <Header />
-      <Hero />
-      <Sobre />
-      <Portfolio />
-      <Servicos />
-      <Cursos />
-      <Contato />
+      <div className="linha-separadora animada"></div>      
+      <Routes>        
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <div className="linha-separadora animada"></div>
+              <Sobre />
+              <Portfolio />
+              <Servicos />
+              <Cursos />
+              <Contato />
+            </>
+          }
+        />        
+        <Route path="/galeria/fotos" element={<GaleriaFotos />} />
+        <Route path="/galeria/videos" element={<GaleriaVideos />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 

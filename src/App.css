@@ -5,14 +5,14 @@ body {
   color: #333;
 }
 header {
-  background-color: #e7a7ee;
+  background: linear-gradient(to right, #f6bcd4, #e6a0f4);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
 }
 .logo {
-  height: 60px;
+  height: 80px;
   border-radius: 50px;
 }
 nav a {
@@ -21,6 +21,7 @@ nav a {
   color: #a450d2;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
@@ -40,20 +41,27 @@ section {
   padding: 3rem 2rem;
   text-align: center;
 }
+.linha-separadora {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, #bf6fea, #f9afe7);  
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s ease-out;
+}
+
+.linha-separadora.animada {
+  opacity: 1;
+  transform: scaleX(1);
+}
 .galeria img {
   width: 100%;
   max-width: 300px;
   margin: 1rem;
   border-radius: 10px;
 }
-ul {
-  list-style: none;
-  padding: 0;
-}
-li {
-  margin: 1rem 0;
-  font-weight: bold;
-}
+
 #contato form {
   max-width: 400px;
   margin: 1rem auto;
@@ -357,3 +365,95 @@ footer {
   box-shadow: 0 0 10px #ffb6c1, 0 0 20px #a450d2;
   transition: 0.4s ease;
 }
+/* Portifolio */
+#portfolio h2 {
+  padding: 4rem 2rem;
+  background-color: #fce4f7;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #a450d2;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-portfolio {
+  background: #fff;
+  border: 2px solid #a450d2;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 0 15px #f3c0f0;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-portfolio h3 {
+  color: #a450d2;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-portfolio p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.card-portfolio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #e698e6;
+  background-color: #fff0fa;
+}
+
+/* Galeria fotos */
+.galeria {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.galeria h2 {
+  font-size: 2.5rem;
+  color: #a855f7; 
+  margin-bottom: 0.5rem;
+}
+
+.galeria p {
+  color: #f9a8d4; 
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.grid-fotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.grid-fotos img {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(234, 174, 238, 0.6); 
+  transition: transform 0.3s ease;
+}
+
+.grid-fotos img:hover {
+  transform: scale(1.03);
+}
+
