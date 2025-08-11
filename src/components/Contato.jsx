@@ -8,16 +8,16 @@ function Contato() {
       <p>Entre em contato pelo WhatsApp ou redes sociais:</p>
 
       <div className="redes-icones">
-        <a href="https://wa.me/seunumero" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/+5581988782834" target="_blank" rel="noopener noreferrer">
           <FaWhatsapp className="icon-zona whatsapp" />
         </a>
-        <a href="https://instagram.com/seuinstagram" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/pamellaborba?igsh=bnFqaGV3cnQzZTBo" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="icon-zona instagram" />
         </a>
-      </div>
-
+      </div>      
       <form>
         <input type="text" placeholder="Seu nome" required />
+        <input type="tel" placeholder="Seu telefone" required />
         <input type="email" placeholder="Seu e-mail" required />
         <textarea placeholder="Mensagem ou dúvida"></textarea>
         <button type="submit">Enviar</button>

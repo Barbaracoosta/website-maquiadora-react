@@ -12,7 +12,7 @@ function Portfolio() {
 
   return (
     <section id="portfolio">
-      <h2 className="titulo">Portfólio</h2>
+      <h2>Portfólio</h2>
       <div className="portfolio-cards">
         <div className="card-portfolio" onClick={() => irParaGaleria('fotos')}>
           <h3> <FaImages className="icon-portfolio" /> Fotos</h3>

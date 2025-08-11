@@ -1,4 +1,6 @@
 import React from 'react';
+import { BsArrowRightCircle } from "react-icons/bs";
+
 
 function Cursos() {
   return (
@@ -8,10 +10,12 @@ function Cursos() {
         <div className="curso">
           <h3>Curso de Automaquiagem</h3>
           <p>Aprenda técnicas práticas para realçar sua beleza no dia a dia.</p>
+          <a href="/curso-automaquiagem" className="mais-info"> <BsArrowRightCircle size={28} color="#a450d2"/> </a>
         </div>
         <div className="curso">
           <h3>Workshop Profissional</h3>
           <p>Para quem quer começar a maquiar profissionalmente e montar um portfólio.</p>
+          <a href="/workshop-profissional" className="mais-info"> <BsArrowRightCircle size={28} color="#a450d2" /> </a>
         </div>
       </div>
     </section>
