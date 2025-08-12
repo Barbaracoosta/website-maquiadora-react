@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f5e8f7;
+  background-color: #fce4f7;
   color: #333;
 }
 
@@ -41,7 +41,7 @@ nav a:hover {
 }
 
 section {
-  padding: 3rem 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
@@ -58,6 +58,12 @@ section {
 .linha-separadora.animada {
   opacity: 1;
   transform: scaleX(1);
+}
+
+#contato h2 {    
+  text-align: center;
+  font-size: 3rem;
+  color: #a450d2;  
 }
 
 #contato form {
@@ -107,11 +113,6 @@ button {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.icon-zona:hover {
-  transform: scale(1.2);
-  color: #ffb6c1;
-}
-
 .icon-zona.whatsapp {
   color: #25D366;
 }
@@ -119,11 +120,20 @@ button {
 .icon-zona.instagram {
   color: #C13584;
 }
+.icon-zona {
+  font-size: 4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-zona:hover {
+  transform: scale(1.2);
+  color: #ffb6c1;
+}
 
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #e7a7ee;
+  background: linear-gradient(to right, #f6bcd4, #e6a0f4);
   color: #fff;
 }
 
@@ -131,8 +141,7 @@ footer {
   padding: 4rem 2rem;  
   text-align: center;
   font-size: 3rem;
-  color: #a450d2;
-  margin-bottom: 1rem;
+  color: #a450d2;  
 }
 
 .cards-servicos {
@@ -160,7 +169,8 @@ footer {
 
 .card-servico:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px #f3c0f0;
+  box-shadow: 0 0 25px #e698e6;
+  background-color: #fff0fa;
 }
 
 #cursos h2 {
@@ -196,13 +206,14 @@ footer {
 
 .curso:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px #f3c0f0;
+  box-shadow: 0 0 25px #e698e6;
+  background-color: #fff0fa;
 }
 
 /* Hero */
 .hero {
   padding: 15.5rem 5rem;
-  background: linear-gradient(to right, #f7e2ea, #ecb7f6);
+  background: linear-gradient(to right, #f3d3e0, #e9acf6);
   text-align: center;
   color: #a450d2;
   font-family: 'Poppins', sans-serif;

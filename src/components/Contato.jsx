@@ -4,7 +4,7 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 function Contato() {
   return (
     <section id="contato">
-      <h2>Agende Seu Horário</h2>
+      <h2>Agende seu horário</h2>
       <p>Entre em contato pelo WhatsApp ou redes sociais:</p>
 
       <div className="redes-icones">
