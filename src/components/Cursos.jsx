@@ -1,6 +1,5 @@
-import React from 'react';
 import { BsArrowRightCircle } from "react-icons/bs";
-
+import "./Cursos.css";
 
 function Cursos() {
   return (

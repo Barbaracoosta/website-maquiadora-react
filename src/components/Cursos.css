@@ -1,0 +1,36 @@
+#cursos h2 {
+  padding: 4rem 2rem;  
+  text-align: center;
+  font-size: 3rem;
+  color: #a450d2;
+  margin-bottom: 1rem;
+}
+
+.lista-cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.curso {
+  background: #fff;
+  border: 2px solid #a450d2;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 0 10px #f3c0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso h3 {
+  margin-bottom: 0.5rem;
+  color: #a450d2;
+}
+
+.curso:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #e698e6;
+  background-color: #fff0fa;
+}

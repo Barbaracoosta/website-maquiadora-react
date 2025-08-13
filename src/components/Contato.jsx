@@ -1,5 +1,5 @@
-import React from 'react';
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import "./Contato.css";
 
 function Contato() {
   return (

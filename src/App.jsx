@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -33,16 +33,14 @@ function App() {
   }
 
   return (
-    <Router>
-      <Header />
-      <div className="linha-separadora animada"></div>      
+    <Router>      
+      <Header />                 
       <Routes>        
         <Route
           path="/"
           element={
-            <>
-              <Hero />
-              <div className="linha-separadora animada"></div>
+            <>              
+              <Hero />              
               <Sobre />
               <Portfolio />
               <Servicos />

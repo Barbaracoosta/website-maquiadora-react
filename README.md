@@ -26,7 +26,7 @@ Seções personalizadas:
 
 Hero com chamada principal
 
-Sobre Mim com foto animada e moldura decorativa
+Sobre Mim com foto e moldura decorativa
 
 Portfólio com cards separados por fotos e vídeos
 

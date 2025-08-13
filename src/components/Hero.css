@@ -1,0 +1,49 @@
+.hero {
+  padding: 15rem;
+  background: linear-gradient(to right, #f3d3e0, #e9acf6);
+  text-align: center;
+  color: #a450d2;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #050008;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #050008;
+}
+
+.btn-hero {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #a450d2;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 5px 15px rgba(164, 80, 210, 0.3);
+}
+
+.btn-hero:hover {
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
+  color: white;
+  box-shadow: 0 0 10px #ffb6c1, 0 0 20px #a450d2;
+  transition: 0.4s ease;
+}

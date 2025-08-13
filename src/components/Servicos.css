@@ -1,0 +1,35 @@
+#servicos h2 {
+  padding: 4rem 2rem;  
+  text-align: center;
+  font-size: 3rem;
+  color: #a450d2;  
+}
+
+.cards-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card-servico {
+  background-color: #fff;
+  border: 2px solid #a450d2;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 0 10px #f3c0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-servico h3 {
+  color: #a450d2;
+  margin-bottom: 0.5rem;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #e698e6;
+  background-color: #fff0fa;
+}

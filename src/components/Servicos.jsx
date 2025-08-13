@@ -1,4 +1,4 @@
-import React from 'react';
+import './Servicos.css';
 
 function Servicos() {
   return (
