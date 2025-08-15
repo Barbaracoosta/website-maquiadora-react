@@ -1,8 +1,6 @@
-import React from 'react';
-
-export default function GaleriaFotos() {
+function GaleriaFotos() {
   return (
-    <section className="galeria">
+    <section className="galeria" id="galeria-fotos">
       <h2>Galeria de Fotos</h2>
       <p>Imagens dos trabalhos feitos com amor!</p>
       <div className="grid-fotos">
@@ -15,3 +13,5 @@ export default function GaleriaFotos() {
     </section>
   );
 }
+export default GaleriaFotos;
+

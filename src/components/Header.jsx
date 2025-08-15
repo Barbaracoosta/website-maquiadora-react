@@ -1,24 +1,45 @@
+import { HashLink as Link } from 'react-router-hash-link';
 import './Header.css';
+
 function Header() {
   return (
-    <header className="header">             
+    <header className="header">
       <nav>
-        <a href="#hero"><img src="/logo.png" alt="Logo Pâmella Borba" className="logo" /></a>
-        <ul>          
-          <li><a href="#sobre">Sobre</a></li>
+        <Link smooth to="/#hero">
+          <img src="/logo.png" alt="Logo Pâmella Borba" className="logo" />
+        </Link>
+        <ul>
+          <li>
+            <Link smooth to="/#sobre">Sobre</Link>
+          </li>
+
           <li className="submenu-container">
-            <a href="#portfolio">Portfólio</a>
+            <Link smooth to="/#portfolio">Portfólio</Link>
             <ul className="submenu">
-              <li><a href="#galeria1">Galeria 1</a></li>
-              <li><a href="#galeria2">Galeria 2</a></li>              
+              <li><Link smooth to="/galeria/fotos">Fotos</Link></li>
+              <li><Link smooth to="/galeria/videos">Vídeos</Link></li>
             </ul>
-          </li>          
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#cursos">Cursos</a></li>
-          <li><a href="#contato" className="btn-agendar">Agende seu horário</a></li>
+          </li>
+
+          <li className="submenu-container">
+            <Link smooth to="/#servicos">Serviços</Link>
+            <ul className="submenu">
+              <li><Link smooth to="/#serviço1">Serviços 1</Link></li>
+              <li><Link smooth to="/#servico2">Serviços 2</Link></li>
+            </ul>
+          </li>
+
+          <li>
+            <Link smooth to="/#cursos">Cursos</Link>
+          </li>
+
+          <li>
+            <Link smooth to="/#contato" className="btn-agendar">
+              Agende seu horário
+            </Link>
+          </li>
         </ul>
-      </nav>    
-      
+      </nav>
     </header>
   );
 }

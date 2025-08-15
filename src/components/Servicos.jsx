@@ -15,7 +15,15 @@ function Servicos() {
         </div>
         <div className="card-servico">
           <h3>Automaquiagem</h3>
-          <p>Aulas para você se maquiar sozinha.</p>
+          <p>Aulas personalizadas e individual para você se maquiar sozinha.</p>
+        </div>
+        <div className="card-servico">
+          <h3>em breve</h3>
+          <p>aguardem novidades</p>
+        </div>
+        <div className="card-servico">
+          <h3>em breve</h3>
+          <p>aguardem novidades</p>
         </div>
       </div>
     </section>

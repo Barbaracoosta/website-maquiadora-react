@@ -1,9 +1,11 @@
 .hero {
-  padding: 15rem;
-  background: linear-gradient(to right, #f3d3e0, #e9acf6);
+  margin-top: 30px;
+  padding: 18rem;
+  background: linear-gradient(to right, #f3d3e0, #e49bf4);
   text-align: center;
   color: #a450d2;
   font-family: 'Poppins', sans-serif;
+  
 }
 
 .hero h1 {

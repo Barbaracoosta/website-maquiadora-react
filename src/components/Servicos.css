@@ -6,11 +6,15 @@
 }
 
 .cards-servicos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 3rem; 
+  justify-content: center; 
+  justify-items: center;
+  margin-top: 2rem;  
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
 }
 
 .card-servico {
@@ -18,10 +22,15 @@
   border: 2px solid #a450d2;
   border-radius: 20px;
   padding: 2rem;
-  width: 280px;
+  width: 100%;
+  max-width: 260px;
   box-shadow: 0 0 10px #f3c0f0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
 }
+
 
 .card-servico h3 {
   color: #a450d2;

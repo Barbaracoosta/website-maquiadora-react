@@ -34,13 +34,14 @@ function App() {
 
   return (
     <Router>      
-      <Header />                 
+      <Header />                        
       <Routes>        
         <Route
           path="/"
           element={
-            <>              
-              <Hero />              
+            <>                          
+              <Hero />
+              <div className="linha-separadora animada"></div>               
               <Sobre />
               <Portfolio />
               <Servicos />

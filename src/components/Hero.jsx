@@ -1,8 +1,9 @@
 import './Hero.css';
 
 function Hero() {
-  return (  
-    <section id="hero" className="hero">      
+  return (
+      
+    <section id="hero" className="hero">         
       <h1>
         Pâmella Borba <br />
         <span>Beleza com propósito!</span>

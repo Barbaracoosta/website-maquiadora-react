@@ -8,9 +8,15 @@
   flex-wrap: wrap;
 }
 
+
 .texto-sobre {
   max-width: 500px;
   text-align: left;
+  
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInText 1s forwards;
+  animation-delay: 0.2s;
 }
 
 .texto-sobre h2 {
@@ -25,17 +31,28 @@
   line-height: 1.6;
 }
 
+@keyframes slideInText {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .foto-sobre {
   position: relative;
   padding: 10px;
   background: linear-gradient(145deg, #a450d2, #ffb6c1);
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(196, 145, 224, 0.929);
+  box-shadow: 0 10px 20px rgba(196, 145, 224, 0.929);  
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideInPhoto 1s forwards;
+  animation-delay: 0.4s;
 }
 
 .foto-sobre img {
   display: block;
-  width: 500px;
+  width: 400px;
   height: auto;
   object-fit: cover;
   border-radius: 20px;
@@ -44,4 +61,12 @@
 
 .foto-sobre img:hover {
   transform: scale(1.02);
+}
+
+
+@keyframes slideInPhoto {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
