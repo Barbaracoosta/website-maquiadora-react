@@ -1,51 +1,71 @@
 .hero {
-  margin-top: 30px;
-  padding: 18rem;
-  background: linear-gradient(to right, #f3d3e0, #e49bf4);
+  background: linear-gradient(-45deg, #ed8bc2, #e59cf5, #df8cf2, #f2cada);
+  animation: gradientBG 6s ease infinite;
+  padding: 3rem 2rem; 
   text-align: center;
-  color: #a450d2;
-  font-family: 'Poppins', sans-serif;
-  
+  color: #9e42d0;
+  min-height: 80vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
 }
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero, section {
+  animation: fadeInUp 1s ease-in-out;}
 
 .hero h1 {
-  font-size: 4.5rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
+  font-family: 'Great Vibes', cursive;
+  font-size: 6rem;   
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 11rem;
+  margin-top: 1rem;
+  line-height: 1;
+} 
 
-.hero h1 span {
+.hero h1 .subtitle {
   display: block;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 400;
-  color: #050008;
+  color: #aa52da;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 1.5rem;
 }
 
-.hero p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #050008;
+.hero-frase {
+  font-family: 'Rubik', sans-serif;  
+  font-size: 3rem;
+  color: #4a034b;
+  margin: 3rem 3rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
 }
 
 .btn-hero {
   display: inline-block;
   margin-top: 2rem;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.5rem; 
   background-color: #a450d2;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   border: none;
-  border-radius: 30px;
+  border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s;
+  transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
   box-shadow: 0 5px 15px rgba(164, 80, 210, 0.3);
 }
 
 .btn-hero:hover {
-  background: linear-gradient(90deg, #a450d2, #ffb6c1);
-  color: white;
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);  
+  color: #4a034b;
   box-shadow: 0 0 10px #ffb6c1, 0 0 20px #a450d2;
-  transition: 0.4s ease;
+  transform: scale(1.05);
 }

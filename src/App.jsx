@@ -34,7 +34,8 @@ function App() {
 
   return (
     <Router>      
-      <Header />                        
+      <Header /> 
+      <div className="linha-separadora animada"></div>                       
       <Routes>        
         <Route
           path="/"
