@@ -7,23 +7,28 @@ function Servicos() {
       <div className="cards-servicos">
         <div className="card-servico">
           <h3>Maquiagem Social</h3>
-          <p>Para festas e eventos especiais.</p>
+          <p>Produção elegante para festas e eventos especiais.</p>
+          
         </div>
         <div className="card-servico">
-          <h3>Noivas</h3>
-          <p>Look completo para o grande dia.</p>
+          <h3>Maquiagem Pele Natural</h3>
+          <p>Acabamento leve que valoriza sua beleza sem exageros.</p>
         </div>
         <div className="card-servico">
-          <h3>Automaquiagem</h3>
-          <p>Aulas personalizadas e individual para você se maquiar sozinha.</p>
+          <h3>Maquiagem para fotografia</h3>
+          <p>Make pensada para realçar seus traços em fotos e vídeos.</p>
         </div>
         <div className="card-servico">
-          <h3>em breve</h3>
-          <p>aguardem novidades</p>
+          <h3>Maquiagem Dia e Noite</h3>
+          <p>Versátil para acompanhar você em qualquer ocasião.</p>
         </div>
         <div className="card-servico">
-          <h3>em breve</h3>
-          <p>aguardem novidades</p>
+          <h3>Maquiagem para Solenidades</h3>
+          <p>Produção sofisticada para formaturas, casamentos e eventos formais.</p>
+        </div>
+        <div className="card-servico">
+          <h3>Maquiagem Masculina</h3>
+          <p>Correção sutil para realçar a naturalidade no dia a dia ou em eventos.</p>
         </div>
       </div>
     </section>

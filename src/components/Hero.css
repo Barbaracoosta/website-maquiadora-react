@@ -1,9 +1,9 @@
 .hero {
-  background: linear-gradient(-45deg, #ed8bc2, #e59cf5, #df8cf2, #f2cada);
-  animation: gradientBG 6s ease infinite;
+  background: linear-gradient(-45deg, #ed8bc2, #d863f2, #ffb6c1, #a45ec9);
+  animation: gradientBG 5s ease infinite;
   padding: 3rem 2rem; 
   text-align: center;
-  color: #9e42d0;
+  color: #090909;
   min-height: 80vh; 
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
 .hero-frase {
   font-family: 'Rubik', sans-serif;  
   font-size: 3rem;
-  color: #4a034b;
+  color: #090909;
   margin: 3rem 3rem;
   font-style: italic;
   margin-bottom: 1.5rem;
