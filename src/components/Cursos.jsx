@@ -9,18 +9,18 @@ function Cursos() {
         <div className="curso">
           <h3>Curso de Automaquiagem</h3>
           <p>Aprenda técnicas práticas para realçar sua beleza no dia a dia.</p>
-          <a href="/curso-automaquiagem" className="mais-info"> Saiba Mais <BsArrowRightCircle size={28} /> </a>
+          <a href="/curso-automaquiagem" className="mais-info-cursos"> Saiba Mais <BsArrowRightCircle size={28} /> </a>
         </div>
         <div className="curso">
           <h3>E-book Skin Care</h3>
           <p>Aprenda técnicas práticas para realçar sua beleza no dia a dia.</p>
-          <a href="/E-book" className="mais-info"> Saiba Mais <BsArrowRightCircle size={28} /> </a>
+          <a href="/E-book" className="mais-info-cursos"> Saiba Mais <BsArrowRightCircle size={28} /> </a>
         </div>
 
         <div className="curso">
-          <h3>Workshop Profissional</h3>
-          <p>Para quem quer começar a maquiar profissionalmente e montar um portfólio.</p>
-          <a href="/workshop-profissional" className="mais-info"> Saiba Mais <BsArrowRightCircle size={28} /> </a>
+          <h3>Workshop Empreendedorismo</h3>
+          <p>Perfeito para quem deseja começar a empreender no universo da beleza.</p>
+          <a href="/workshop-profissional" className="mais-info-cursos"> Saiba Mais <BsArrowRightCircle size={28} /> </a>
         </div>
       </div>
     </section>

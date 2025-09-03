@@ -1,8 +1,8 @@
 #servicos h2 {
   padding: 4rem 2rem;  
   text-align: center;
-  font-size: 3rem;
-  color: #a450d2;  
+  font-size: 4rem;
+  color: #090909;  
 }
 
 .cards-servicos {
@@ -38,4 +38,24 @@
   transform: translateY(-5px);
   box-shadow: 0 0 25px #e698e6;
   background-color: #fff0fa;
+}
+.mais-info-servico {
+  background: #eedfe3;
+  color: #a450d2;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; 
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.mais-info-servico:hover {
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);  
+  color: #4a034b;
+  box-shadow: 0 0 10px #ffb6c1, 0 0 20px #a450d2;
+  transform: scale(1.05);
 }
