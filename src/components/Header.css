@@ -46,13 +46,6 @@
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-.logo-text {
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: var(--text-color);
-  letter-spacing: -0.5px;
-}
-
 .nav-menu-desktop {
   display: flex;
   align-items: center;
