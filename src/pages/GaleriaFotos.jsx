@@ -1,3 +1,5 @@
+import './GaleriaFotos.css';
+
 function GaleriaFotos() {
   return (
     <section className="galeria" id="galeria-fotos">
