@@ -1,53 +1,62 @@
-#contato h2 {    
+#contato {
+  padding: 2rem 2rem;  
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.contato-titulo {
   text-align: center;
-  font-size: 3rem;
-  color: #a450d2;  
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  color: #333;
 }
 
-#contato form {
-  max-width: 400px;
-  margin: 1rem auto;
-  display: flex;
-  flex-direction: column;  
-}
-
-#contato input,
-#contato textarea {
-  margin-bottom: 1rem;
-  padding: 0.8rem;
-  border-radius: 8px;
-  border: 1px solid #8e3cc3;
-}
-
-form button:hover {
-  background-color: #8e3cc3;
-}
-
-form input:focus,
-form textarea:focus {
-  outline: none;
-  border-color: #d279ee;
-  box-shadow: 0 0 5px #d279ee;
-}
-
-button {
-  background-color: #a450d2;
-  color: white;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.redes-icones {
+.contato-container {
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  margin: 1.5rem 0;
+  align-items: center;
+  gap: 3rem; 
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.foto-container {
+  display: flex;
+  justify-content: center;
+  flex: 1;  
+}
+
+.foto {  
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 6px solid #ef90b1;
+  transition: transform 0.3s
+}
+
+.foto:hover {
+  transform: translateY(-5px);
+}
+
+.contato-conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.contato-conteudo p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 .icon-zona {
-  font-size: 4rem;
+  font-size: 5rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -58,12 +67,89 @@ button {
 .icon-zona.instagram {
   color: #C13584;
 }
-.icon-zona {
-  font-size: 4rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+
+.icon-zona.email {
+  color: #f72b20;
 }
 
 .icon-zona:hover {
   transform: scale(1.2);
   color: #ffb6c1;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contato-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 140px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.contato-card span {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contato-container {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .contato-conteudo {
+    text-align: center; 
+    align-items: center;
+  }
+
+  .foto {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .contato-conteudo h2 {
+    font-size: 2rem;
+  }
+
+  .contato-conteudo p {
+    font-size: 1rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+  }
+
+  .contato-card {
+    width: 120px;
+  }
+
+  .icon-zona {
+    font-size: 3rem;
+  }
 }
