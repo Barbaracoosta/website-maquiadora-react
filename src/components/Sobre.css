@@ -8,11 +8,9 @@
   flex-wrap: wrap;
 }
 
-
 .texto-sobre {
   max-width: 500px;
-  text-align: left;
-  
+  text-align: left;  
   opacity: 0;
   transform: translateX(-30px);
   animation: slideInText 1s forwards;

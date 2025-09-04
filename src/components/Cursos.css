@@ -55,3 +55,36 @@
   box-shadow: 0 0 10px #ffb6c1, 0 0 20px #a450d2;
   transform: scale(1.05);
 }
+
+@media (max-width: 992px) {
+  #cursos h2 {
+    font-size: 2.5rem;
+  }
+
+  .curso {
+    width: 240px;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #cursos h2 {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .lista-cursos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .curso {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .mais-info-cursos {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+}

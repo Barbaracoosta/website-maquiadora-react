@@ -10,7 +10,7 @@ function Contato() {
           <img src="/PAM-FOTO2.jpeg" alt="Pamella" className="foto" />
         </div>
         <div className="contato-conteudo">          
-          <p>Entre em contato pelos canais abaixo:</p>
+          <p>Entre em contato pelos canais:</p>
 
           <div className="cards-container">
             <a href="https://wa.me/+5581988782834" target="_blank" rel="noopener noreferrer" className="contato-card">

@@ -22,13 +22,12 @@
 
 .hero h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 6rem;   
   margin-bottom: 0.5rem;
   font-weight: 600;
   font-size: 11rem;
   margin-top: 1rem;
   line-height: 1;
-} 
+}
 
 .hero h1 .subtitle {
   display: block;
@@ -68,4 +67,10 @@
   color: #4a034b;
   box-shadow: 0 0 10px #ffb6c1, 0 0 20px #a450d2;
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 6rem;
+  }
 }

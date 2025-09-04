@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaImages, FaVideo } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import './Portfolio.css'; 

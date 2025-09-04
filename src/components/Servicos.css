@@ -2,7 +2,7 @@
   padding: 4rem 2rem;  
   text-align: center;
   font-size: 4rem;
-  color: #090909;  
+  color: #090909;
 }
 
 .cards-servicos {
@@ -58,4 +58,14 @@
   color: #4a034b;
   box-shadow: 0 0 10px #ffb6c1, 0 0 20px #a450d2;
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .cards-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
 }
