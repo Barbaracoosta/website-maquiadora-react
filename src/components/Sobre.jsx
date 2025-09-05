@@ -2,7 +2,8 @@ import "./Sobre.css";
 
 function Sobre() {
   return (
-    <section id="sobre" className="sobre">
+    <section id="sobre" className="sobre">     
+
       <div className="texto-sobre">
         <h2>Sobre Mim</h2>
         <p>

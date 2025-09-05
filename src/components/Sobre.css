@@ -1,33 +1,93 @@
+
 #sobre.sobre {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 4rem 2rem;
-  background-color: #fce4f7;
+  gap: 3rem;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #f1afe2 0%, #d4b4f1 100%);
   flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
 }
 
 .texto-sobre {
   max-width: 500px;
-  text-align: left;  
+  text-align: left;
   opacity: 0;
-  transform: translateX(-30px);
-  animation: slideInText 1s forwards;
-  animation-delay: 0.2s;
+  transform: translateX(-50px);
+  animation: slideInText 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.3s;
+  z-index: 2;
 }
 
 .texto-sobre h2 {
-  font-size: 2.5rem;
-  color: #a450d2;
-  margin-bottom: 1rem;
+  font-size: 2.8rem;
+  background: linear-gradient(135deg, #4a034b 0%, #a450d2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.texto-sobre h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
+  border-radius: 2px;
 }
 
 .texto-sobre p {
   font-size: 1.2rem;
-  color: #070707;
-  line-height: 1.6;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
+
+.foto-sobre {
+  position: relative;
+  padding: 12px;
+  background: linear-gradient(145deg, #a450d2, #ffb6c1);
+  border-radius: 24px;
+  box-shadow: 
+    0 15px 35px rgba(164, 80, 210, 0.3),
+    0 5px 15px rgba(255, 182, 193, 0.2);
+  opacity: 0;
+  transform: translateX(50px) rotate(3deg);
+  animation: slideInPhoto 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-delay: 0.5s;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+
+.foto-sobre:hover {
+  transform: translateY(-5px) rotate(0deg);
+  box-shadow: 
+    0 20px 40px rgba(164, 80, 210, 0.4),
+    0 10px 20px rgba(255, 182, 193, 0.3);
+}
+
+.foto-sobre img {
+  display: block;
+  width: 380px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: all 0.5s ease;
+}
+
+.foto-sobre:hover img {
+  transform: scale(1.03);
+}
+
 
 @keyframes slideInText {
   to {
@@ -36,35 +96,56 @@
   }
 }
 
-.foto-sobre {
-  position: relative;
-  padding: 10px;
-  background: linear-gradient(145deg, #a450d2, #ffb6c1);
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(196, 145, 224, 0.929);  
-  opacity: 0;
-  transform: translateX(30px);
-  animation: slideInPhoto 1s forwards;
-  animation-delay: 0.4s;
-}
-
-.foto-sobre img {
-  display: block;
-  width: 400px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 20px;
-  transition: transform 0.4s ease-in-out;
-}
-
-.foto-sobre img:hover {
-  transform: scale(1.02);
-}
-
-
 @keyframes slideInPhoto {
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+
+@media (max-width: 968px) {
+  #sobre.sobre {
+    gap: 2.5rem;
+    padding: 4rem 1.5rem;
+  }
+
+  .texto-sobre {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .texto-sobre h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .foto-sobre img {
+    width: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  #sobre.sobre {
+    gap: 2rem;
+    padding: 3rem 1rem;
+  }
+
+  .texto-sobre h2 {
+    font-size: 2.2rem;
+  }
+
+  .texto-sobre p {
+    font-size: 1.1rem;
+  }
+
+  .foto-sobre {
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .foto-sobre img {
+    width: 280px;
+    border-radius: 16px;
   }
 }
