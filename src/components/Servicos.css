@@ -1,9 +1,26 @@
 #servicos h2 {
-  padding: 4rem 2rem;  
-  text-align: center;
-  font-size: 4rem;
-  color: #090909;
+  font-size: 3rem;
+  background: linear-gradient(135deg, #4a034b 0%, #a450d2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
 }
+
+#servicos h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
+  border-radius: 2px;  
+} 
 
 .cards-servicos {
   display: grid;

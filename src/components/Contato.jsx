@@ -4,12 +4,13 @@ import "./Contato.css";
 function Contato() {
   return (
     <section id="contato">
-      <h2 className="contato-titulo">Contato</h2>
+      
       <div className="contato-container">
         <div className="foto-container">
           <img src="/PAM-FOTO2.jpeg" alt="Pamella" className="foto" />
         </div>
-        <div className="contato-conteudo">          
+        <div className="contato-conteudo">  
+          <h2 className="contato-titulo">Contato</h2>        
           <p>Entre em contato pelos canais:</p>
 
           <div className="cards-container">
