@@ -1,0 +1,35 @@
+.galeriavideo {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-top: 20px;
+}
+
+.galeriavideo h2 {
+  font-size: 3rem;
+  background: linear-gradient(135deg, #4a034b 0%, #a450d2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.galeriavideo h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
+  border-radius: 2px;  
+}
+
+.galeriavideo p {
+  color: #555;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
