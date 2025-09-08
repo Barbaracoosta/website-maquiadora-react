@@ -1,6 +1,5 @@
 .hero {
-  background: linear-gradient(-45deg, #ed8bc2, #d863f2, #ffb6c1, #a45ec9);
-  animation: gradientBG 5s ease infinite;
+  background: linear-gradient(-45deg, #ed8bc2, #d863f2, #a45ec9);  
   padding: 3rem 2rem; 
   text-align: center;
   color: #090909;
@@ -11,19 +10,13 @@
   align-items: center;
 }
 
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 .hero, section {
   animation: fadeInUp 1s ease-in-out;}
 
 .hero h1 {
   font-family: 'Great Vibes', cursive;
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 11rem;
   margin-top: 1rem;
   line-height: 1;
@@ -31,16 +24,16 @@
 
 .hero h1 .subtitle {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
-  color: #aa52da;
+  color: #a13fd6;
   font-family: 'Quicksand', sans-serif;
   margin-bottom: 1.5rem;
 }
 
 .hero-frase {
   font-family: 'Rubik', sans-serif;  
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #090909;
   margin: 3rem 3rem;
   font-style: italic;
@@ -71,6 +64,6 @@
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }

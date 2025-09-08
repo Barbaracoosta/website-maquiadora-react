@@ -1,3 +1,9 @@
+#servicos {
+  padding: 4rem 2rem;
+  background: #fce4f7;
+  text-align: center;
+}
+
 #servicos h2 {
   font-size: 3rem;
   background: linear-gradient(135deg, #4a034b 0%, #a450d2 100%);
@@ -32,6 +38,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
+  text-align: center;
 }
 
 .card-servico {
@@ -44,7 +51,6 @@
   box-shadow: 0 0 10px #f3c0f0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;  
 }
-
 
 .card-servico h3 {
   color: #a450d2;
@@ -79,10 +85,16 @@
 
 @media (max-width: 768px) {
   .cards-servicos {
-    display: flex;
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-servicos {
+    grid-template-columns: 1fr;
   }
 }

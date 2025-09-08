@@ -1,3 +1,9 @@
+#cursos {
+  padding: 4rem 2rem;
+  background: #fce4f7;
+  text-align: center;
+}
+
 #cursos h2 {
   font-size: 3rem;
   background: linear-gradient(135deg, #4a034b 0%, #a450d2 100%);
