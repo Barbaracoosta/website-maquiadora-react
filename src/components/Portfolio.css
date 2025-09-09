@@ -1,10 +1,15 @@
 #portfolio {
-  background: linear-gradient(to right, #f3d3e0, #e195f2);  
-  background-size: 400% 400%;   
-  padding: 5rem 2rem;
-  min-height: 87vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  padding: 3rem 3rem; 
+  text-align: center;
+  color: #090909;
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
+  justify-content: flex-start; 
   align-items: center;
 }
 
@@ -81,3 +86,78 @@
   background-color: #fff0fa;
 }
 
+@media (max-width: 1200px) {
+  #portfolio {
+    padding: 2rem;
+  }
+
+  #portfolio h2 {
+    font-size: 2.5rem;
+  }
+
+  #portfolio p {
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+  }
+
+  .portfolio-cards {
+    gap: 2rem;
+  }
+
+  .card-portfolio {
+    width: 220px;
+    padding: 1.5rem;
+  }
+
+  .card-portfolio h3 {
+    font-size: 1.3rem;
+  }
+
+  .card-portfolio p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #portfolio h2 {
+    font-size: 2rem;
+    padding: 1.5rem 0.5rem;
+    min-height: auto;
+    background-attachment: scroll;
+  }
+
+  #portfolio p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .portfolio-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card-portfolio {
+    width: 90%;
+    max-width: 300px;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #portfolio h2 {
+    font-size: 1.8rem;
+  }
+
+  #portfolio p {
+    font-size: 0.95rem;
+  }
+
+  .card-portfolio h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-portfolio p {
+    font-size: 0.9rem;
+  }
+}

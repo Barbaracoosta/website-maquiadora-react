@@ -1,5 +1,6 @@
 import { FaImages, FaVideo } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import fundo from '../assets/pam-capa2.jpg';
 import './Portfolio.css'; 
 
 
@@ -11,7 +12,7 @@ function Portfolio() {
   };
 
   return (
-    <section id="portfolio">
+    <section id="portfolio" style={{ backgroundImage: `url(${fundo})` }}>
       <h2>Portfólio</h2>
       <p>Cada maquiagem conta uma história. <br/>
        Explore meu portfólio de fotos e vídeos e descubra como realçar sua beleza de forma única!</p>
