@@ -1,58 +1,79 @@
 .hero {
-  background: linear-gradient(-45deg, #ed8bc2, #d863f2, #a45ec9);  
-  padding: 3rem 2rem; 
-  text-align: center;
-  color: #090909;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 80vh; 
   display: flex;
-  flex-direction: column;
   justify-content: center; 
   align-items: center;
+  text-align: center;
+  color: #090909;
+  padding: 3rem 2rem;
+  overflow: hidden;
 }
 
-.hero, section {
-  animation: fadeInUp 1s ease-in-out;}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, rgba(232, 147, 195, 0.3), rgba(169, 87, 207, 0.4));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; 
+  max-width: 90%; 
+  margin: 0 auto;
+}
 
 .hero h1 {
   font-family: 'Great Vibes', cursive;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  font-size: 11rem;
+  font-size: clamp(3.5rem, 10vw, 11rem);
   margin-top: 1rem;
-  line-height: 1;
+  line-height: 1.1;
+  color: #d8d3d3;     
 }
 
 .hero h1 .subtitle {
   display: block;
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 3vw, 2rem);
   font-weight: 400;
-  color: #a13fd6;
+  color: #fcf8fe;
   font-family: 'Quicksand', sans-serif;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;  
 }
 
 .hero-frase {
   font-family: 'Rubik', sans-serif;  
-  font-size: 2.5rem;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
   color: #090909;
-  margin: 3rem 3rem;
+  margin: 3rem;
   font-style: italic;
   margin-bottom: 1.5rem;
+  line-height: 1.4;
 }
 
 .btn-hero {
   display: inline-block;
   margin-top: 2rem;
-  padding: 1.2rem 2.5rem; 
+  padding: clamp(0.8rem, 2vw, 1.2rem) clamp(1.5rem, 4vw, 2.5rem);
   background-color: #a450d2;
   color: white;
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
   border: none;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s ease;
   box-shadow: 0 5px 15px rgba(164, 80, 210, 0.3);
+  white-space: nowrap;
 }
 
 .btn-hero:hover {
@@ -62,8 +83,96 @@
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .hero h1 {
-    font-size: 5rem;
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    min-height: 70vh;
+    background-attachment: scroll; 
+  }
+  
+  .hero h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+    min-height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 4.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .hero h1 .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-frase {
+    font-size: 1.5rem;
+    margin: 1.5rem 0.5rem;
+  }
+
+  .btn-hero {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 50vh;
+    padding: 1.5rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
+  .hero h1 .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-frase {
+    font-size: 1.2rem;
+    margin: 1rem 0.5rem;
+    line-height: 1.5;
+  }
+
+  .btn-hero {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-frase {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .hero-content {
+    transform: scale(0.9);
   }
 }

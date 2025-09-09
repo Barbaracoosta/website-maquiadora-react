@@ -1,3 +1,4 @@
+import FotoPam from '../assets/PAM-FOTO.jpeg';
 import "./Sobre.css";
 
 function Sobre() {
@@ -22,7 +23,7 @@ function Sobre() {
       </div>
       
       <div className="foto-sobre">
-        <img src='/PAM-FOTO.jpeg' alt="Pâmella Borba" />
+        <img src={FotoPam} alt="Pâmella Borba" />
       </div>
     </section>
   );
