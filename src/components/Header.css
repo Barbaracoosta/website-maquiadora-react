@@ -92,7 +92,7 @@
   padding: 0.7rem 1.5rem;  
   color: #d8d3d3;               
   font-weight: 500;
-  font-size: 1rem;      
+  font-size: 1.2rem;      
   text-decoration: none;
   transition: var(--transition);
 }
@@ -115,6 +115,8 @@
   color: #d8d3d3; 
   padding: 0.5rem 1rem;
   border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
   box-shadow: 0 5px 15px rgba(202, 201, 202, 0.3);
@@ -279,7 +281,7 @@
   cursor: pointer;
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--text-color);
+  color: #d8d3d3;
   transition: var(--transition);
   gap: 0.8rem;
 }
@@ -340,7 +342,7 @@
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;  
   box-shadow: var(--shadow);
   transition: var(--transition);
   animation: pulse-glow 3s infinite;
