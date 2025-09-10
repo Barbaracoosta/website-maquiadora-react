@@ -1,9 +1,6 @@
 :root {
-  --primary-color: #a450d2;
-  --secondary-color: #ffb6c1;
-  --text-color: #2d2d2d;
-  --text-light: #5a5a5a;
-  --background: #ffffff;
+  --primary-color: #a450d2;  
+  --text-color: #2d2d2d;    
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
   --border-radius: 12px;
@@ -13,10 +10,10 @@
   position: relative;
   top: 0;
   width: 100%;
-  background: linear-gradient(90deg, #ffb6c1, #a450d2);
+  background: linear-gradient(-45deg, #a45ec9, #d863f2);
   z-index: 100;
   box-sizing: border-box;
-  padding: 1rem 2rem;  
+  padding: 1rem 2rem;
 }
 
 .header nav {
@@ -54,7 +51,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: var(--text-color);               
+  color: #d8d3d3;               
   font-weight: 600;
   font-size: 1.1rem;
   padding: 0.6rem 1rem;
@@ -69,22 +66,18 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-
-.nav-link:hover::after {
-  width: 70%;
-}
-
 .submenu-container {
   position: relative;
 }
 
 .submenu {
+  position: relative;
   visibility: hidden;
   opacity: 0;
   position: absolute;
   top: 100%;
   left: 0;
-  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));  
+  background: linear-gradient(-45deg, #a45ec9, #d863f2);  
   padding: 0.5rem 0;
   border-radius: var(--border-radius);
   min-width: 130px;
@@ -97,7 +90,7 @@
 .submenu-link {
   display: block;  
   padding: 0.7rem 1.5rem;  
-  color: var(--text-color);               
+  color: #d8d3d3;               
   font-weight: 500;
   font-size: 1rem;      
   text-decoration: none;
@@ -119,7 +112,7 @@
 
 .btn-agendar {
   background-color: #a450d2;
-  color: white;
+  color: #d8d3d3; 
   padding: 0.5rem 1rem;
   border-radius: 20px;
   text-decoration: none;
@@ -151,14 +144,15 @@
 .hamburger span {
   width: 100%;
   height: 3px;
-  background-color: var(--text-color);
+  background-color: #d8d3d3; 
   border-radius: 3px;
   transition: var(--transition);
   transform-origin: center;
+  z-index: 1001;
 }
 
 .hamburger--active span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(6px, 6px);  
 }
 
 .hamburger--active span:nth-child(2) {
@@ -167,7 +161,7 @@
 }
 
 .hamburger--active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(6px, -6px);  
 }
 
 .nav-menu-overlay {
@@ -195,7 +189,7 @@
   height: 100vh;
   width: 85%;
   max-width: 350px;
-  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+  background: linear-gradient(-45deg, #a45ec9, #d863f2);
   transition: right 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
   z-index: 999;
@@ -205,7 +199,11 @@
 }
 
 .nav-menu-mobile--active {
-  right: 0;
+  right: 0;  
+  position: fixed; 
+  top: 0;          
+  height: 100vh;   
+  overflow-y: auto;
 }
 
 .nav-menu-header {
@@ -213,13 +211,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 1.5rem 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.nav-menu-header h3 {
-  margin: 0;
-  color: var(--text-color);
-  font-size: 1.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);    
 }
 
 .close-menu-button {
@@ -227,7 +219,7 @@
   border: none;
   font-size: 1.8rem;
   cursor: pointer;
-  color: var(--text-color);
+  color: #d8d3d3; 
   padding: 0.2rem;
   border-radius: 50%;
   width: 40px;
@@ -236,6 +228,7 @@
   align-items: center;
   justify-content: center;
   transition: var(--transition);
+  z-index: 9999;
 }
 
 .close-menu-button:hover {
@@ -255,7 +248,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--text-color);
+  color: #d8d3d3; 
   font-weight: 600;
   font-size: 1.1rem;
   padding: 1rem 1.2rem;
@@ -267,12 +260,6 @@
 .nav-link-mobile:active {
   background: rgba(255, 255, 255, 0.2);
   transform: translateX(5px);
-}
-
-.nav-icon {
-  font-size: 1.2rem;
-  width: 24px;
-  text-align: center;
 }
 
 .submenu-mobile-container {
@@ -326,7 +313,7 @@
   align-items: center;
   padding: 0.9rem 2.5rem;
   text-decoration: none;
-  color: var(--text-color);
+  color: #d8d3d3; 
   font-size: 1rem;
   font-weight: 500;
   transition: var(--transition);
@@ -348,7 +335,7 @@
 
 .btn-agendar-mobile {
   background-color: var(--primary-color);
-  color: white;
+  color: #d8d3d3; 
   padding: 1rem;
   border-radius: 30px;
   text-decoration: none;
@@ -356,6 +343,7 @@
   font-weight: 600;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  animation: pulse-glow 3s infinite;
 }
 
 .btn-agendar-mobile:active {
@@ -363,13 +351,25 @@
   box-shadow: 0 2px 8px rgba(164, 80, 210, 0.4);
 }
 
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(231, 137, 170, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(232, 12, 89, 0.6);
+  }
+}
+
+
 .social-links {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
 }
 
-.social-links a {
+.social-links a {  
+  color: #d8d3d3;  
+  font-size: 2rem; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,14 +385,15 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
+
 @media (max-width: 768px) {
   .header {
-    padding: 0.8rem 1.5rem;
-  }
-  
-  .logo-text {
-    display: none;
-  }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+  }  
   
   .hamburger {
     display: flex;

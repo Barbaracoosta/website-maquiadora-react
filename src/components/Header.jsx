@@ -1,6 +1,7 @@
-import { HashLink as Link } from 'react-router-hash-link';
-import { useState, useEffect, useRef } from 'react';
-import './Header.css';
+import { HashLink as Link } from "react-router-hash-link";
+import { useState, useEffect, useRef } from "react";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import "./Header.css";
 
 function Header() {
   const [menuOpen, setMenuAberto] = useState(false);
@@ -10,16 +11,19 @@ function Header() {
 
   useEffect(() => {
     const handleCliqueFora = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target) && 
-          !event.target.closest('.hamburger')) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        !event.target.closest(".hamburger")
+      ) {
         setMenuAberto(false);
         setSubmenuAtivo(null);
       }
     };
 
-    document.addEventListener('mousedown', handleCliqueFora);
+    document.addEventListener("mousedown", handleCliqueFora);
     return () => {
-      document.removeEventListener('mousedown', handleCliqueFora);
+      document.removeEventListener("mousedown", handleCliqueFora);
     };
   }, []);
 
@@ -32,8 +36,8 @@ function Header() {
       }
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const abrirMenu = () => {
@@ -60,10 +64,10 @@ function Header() {
         <Link smooth to="/#hero" onClick={fecharMenu} className="logo-link">
           <img src="/logo.png" alt="Logo Pâmella Borba" className="logo" />
         </Link>
-        
+
         {isMobile && (
-          <button 
-            className={`hamburger ${menuOpen ? 'hamburger--active' : ''}`} 
+          <button
+            className={`hamburger ${menuOpen ? "hamburger--active" : ""}`}
             onClick={abrirMenu}
             aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={menuOpen}
@@ -73,119 +77,207 @@ function Header() {
             <span></span>
           </button>
         )}
-        
+
         {!isMobile && (
           <div className="nav-menu-desktop">
-            <Link smooth to="/#sobre" className="nav-link">Sobre</Link>
-            
+            <Link smooth to="/#sobre" className="nav-link">
+              Sobre
+            </Link>
+
             <div className="submenu-container">
-              <Link smooth to="/#portfolio" className="nav-link">Portfólio</Link>
+              <Link smooth to="/#portfolio" className="nav-link">
+                Portfólio
+              </Link>
               <div className="submenu">
-                <Link smooth to="/galeria/fotos" className="submenu-link">Fotos</Link>
-                <Link smooth to="/galeria/videos" className="submenu-link">Vídeos</Link>
+                <Link smooth to="/galeria/fotos" className="submenu-link">
+                  Fotos
+                </Link>
+                <Link smooth to="/galeria/videos" className="submenu-link">
+                  Vídeos
+                </Link>
               </div>
             </div>
-            
+
             <div className="submenu-container">
-              <Link smooth to="/#servicos" className="nav-link">Serviços</Link>
+              <Link smooth to="/#servicos" className="nav-link">
+                Serviços
+              </Link>
               <div className="submenu">
-                <Link smooth to="/#serviço1" className="submenu-link">Serviços 1</Link>
-                <Link smooth to="/#servico2" className="submenu-link">Serviços 2</Link>
+                <Link smooth to="/#serviço1" className="submenu-link">
+                  Serviços 1
+                </Link>
+                <Link smooth to="/#servico2" className="submenu-link">
+                  Serviços 2
+                </Link>
               </div>
             </div>
-            
-            <Link smooth to="/#cursos" className="nav-link">Cursos</Link>
-            
+
+            <Link smooth to="/#cursos" className="nav-link">
+              Cursos
+            </Link>
+
             <Link smooth to="/#contato" className="btn-agendar">
               Agende seu horário
             </Link>
           </div>
         )}
-        
+
         {isMobile && (
           <>
-            <div 
-              className={`nav-menu-overlay ${menuOpen ? 'nav-menu-overlay--active' : ''}`}
+            <div
+              className={`nav-menu-overlay ${
+                menuOpen ? "nav-menu-overlay--active" : ""
+              }`}
               onClick={fecharMenu}
             ></div>
-            
-            <div 
+
+            <div
               ref={menuRef}
-              className={`nav-menu-mobile ${menuOpen ? 'nav-menu-mobile--active' : ''}`}
+              className={`nav-menu-mobile ${
+                menuOpen ? "nav-menu-mobile--active" : ""
+              }`}
             >
               <div className="nav-menu-header">
-                <button 
+                <button
                   className="close-menu-button"
                   onClick={fecharMenu}
                   aria-label="Fechar menu"
-                >
-                </button>
+                ></button>
               </div>
-              
+
               <div className="nav-menu-content">
-                <Link smooth to="/#sobre" className="nav-link-mobile" onClick={fecharMenu}>
+                <Link
+                  smooth
+                  to="/#sobre"
+                  className="nav-link-mobile"
+                  onClick={fecharMenu}
+                >
                   Sobre
                 </Link>
-                
+
                 <div className="submenu-mobile-container">
-                  <div 
+                  <div
                     className="submenu-mobile-header"
-                    onClick={() => abrirSubmenu('portfolio')}
-                    aria-expanded={activeSubmenu === 'portfolio'}
+                    onClick={() => abrirSubmenu("portfolio")}
+                    aria-expanded={activeSubmenu === "portfolio"}
                   >
-                    <span>
-                      Portfólio
-                    </span>
-                    <span className={`submenu-arrow ${activeSubmenu === 'portfolio' ? 'submenu-arrow--active' : ''}`}>
+                    <span>Portfólio</span>
+                    <span
+                      className={`submenu-arrow ${
+                        activeSubmenu === "portfolio"
+                          ? "submenu-arrow--active"
+                          : ""
+                      }`}
+                    >
                       ▼
                     </span>
                   </div>
-                  <div className={`submenu-mobile ${activeSubmenu === 'portfolio' ? 'submenu-mobile--active' : ''}`}>
-                    <Link smooth to="/galeria/fotos" className="submenu-link-mobile" onClick={fecharMenu}>
+                  <div
+                    className={`submenu-mobile ${
+                      activeSubmenu === "portfolio"
+                        ? "submenu-mobile--active"
+                        : ""
+                    }`}
+                  >
+                    <Link
+                      smooth
+                      to="/galeria/fotos"
+                      className="submenu-link-mobile"
+                      onClick={fecharMenu}
+                    >
                       Fotos
                     </Link>
-                    <Link smooth to="/galeria/videos" className="submenu-link-mobile" onClick={fecharMenu}>
+                    <Link
+                      smooth
+                      to="/galeria/videos"
+                      className="submenu-link-mobile"
+                      onClick={fecharMenu}
+                    >
                       Vídeos
                     </Link>
                   </div>
                 </div>
-                
+
                 <div className="submenu-mobile-container">
-                  <div 
+                  <div
                     className="submenu-mobile-header"
-                    onClick={() => abrirSubmenu('servicos')}
-                    aria-expanded={activeSubmenu === 'servicos'}
+                    onClick={() => abrirSubmenu("servicos")}
+                    aria-expanded={activeSubmenu === "servicos"}
                   >
-                    <span>
-                      Serviços
-                    </span>
-                    <span className={`submenu-arrow ${activeSubmenu === 'servicos' ? 'submenu-arrow--active' : ''}`}>
+                    <span>Serviços</span>
+                    <span
+                      className={`submenu-arrow ${
+                        activeSubmenu === "servicos"
+                          ? "submenu-arrow--active"
+                          : ""
+                      }`}
+                    >
                       ▼
                     </span>
                   </div>
-                  <div className={`submenu-mobile ${activeSubmenu === 'servicos' ? 'submenu-mobile--active' : ''}`}>
-                    <Link smooth to="/#serviço1" className="submenu-link-mobile" onClick={fecharMenu}>
+                  <div
+                    className={`submenu-mobile ${
+                      activeSubmenu === "servicos"
+                        ? "submenu-mobile--active"
+                        : ""
+                    }`}
+                  >
+                    <Link
+                      smooth
+                      to="/#serviço1"
+                      className="submenu-link-mobile"
+                      onClick={fecharMenu}
+                    >
                       Serviços 1
                     </Link>
-                    <Link smooth to="/#servico2" className="submenu-link-mobile" onClick={fecharMenu}>
+                    <Link
+                      smooth
+                      to="/#servico2"
+                      className="submenu-link-mobile"
+                      onClick={fecharMenu}
+                    >
                       Serviços 2
                     </Link>
                   </div>
                 </div>
-                
-                <Link smooth to="/#cursos" className="nav-link-mobile" onClick={fecharMenu}>
+
+                <Link
+                  smooth
+                  to="/#cursos"
+                  className="nav-link-mobile"
+                  onClick={fecharMenu}
+                >
                   Cursos
                 </Link>
-                
+
                 <div className="nav-menu-footer">
-                  <Link smooth to="/#contato" className="btn-agendar-mobile" onClick={fecharMenu}>
+                  <Link
+                    smooth
+                    to="/#contato"
+                    className="btn-agendar-mobile"
+                    onClick={fecharMenu}
+                  >
                     Agende seu horário
                   </Link>
-                  
+
                   <div className="social-links">
-                    <a href="#" aria-label="Instagram"><span>📱</span></a>
-                    <a href="#" aria-label="Facebook"><span>📘</span></a>
-                    <a href="#" aria-label="WhatsApp"><span>💬</span></a>
+                    <a
+                      href="https://wa.me/+5581988782834"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="WhatsApp"
+                    >
+                      <FaWhatsapp  />
+                      
+                    </a>
+                    <a
+                      href="https://www.instagram.com/pamellaborba"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"                    >
+                      <FaInstagram  />                      
+                    </a>
+                    
                   </div>
                 </div>
               </div>
