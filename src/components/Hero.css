@@ -8,8 +8,7 @@
   display: flex;
   justify-content: center; 
   align-items: center;
-  text-align: center;
-  color: #090909;
+  text-align: center;  
   padding: 3rem 2rem;
   overflow: hidden;
 }
@@ -53,9 +52,8 @@
 .hero-frase {
   font-family: 'Rubik', sans-serif;  
   font-size: clamp(1.2rem, 3vw, 2.5rem);
-  color: #090909;
-  margin: 3rem;
-  font-style: italic;
+  color: #fcf8fe;
+  margin: 3rem; 
   margin-bottom: 1.5rem;
   line-height: 1.4;
 }
@@ -91,8 +89,7 @@
 
 @media (max-width: 992px) {
   .hero {
-    min-height: 70vh;
-    background-attachment: scroll; 
+    min-height: 70vh;   
   }
   
   .hero h1 {

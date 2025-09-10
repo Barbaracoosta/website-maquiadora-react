@@ -2,11 +2,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
-  padding: 3rem 3rem; 
+  background-attachment: fixed;  
   text-align: center;
   color: #090909;
-  min-height: 100vh; 
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start; 
@@ -119,11 +118,15 @@
 }
 
 @media (max-width: 768px) {
+
   #portfolio h2 {
-    font-size: 2rem;
-    padding: 1.5rem 0.5rem;
-    min-height: auto;
-    background-attachment: scroll;
+    font-size: 2rem;     
+  }
+
+  #portfolio h2::after{
+    width: 50px;
+    height: 3px;
+    bottom: -8px;
   }
 
   #portfolio p {
@@ -144,9 +147,14 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
+
   #portfolio h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  #portfolio h2::after{    
+    bottom: -8px;
   }
 
   #portfolio p {

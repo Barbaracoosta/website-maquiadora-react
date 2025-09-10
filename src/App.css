@@ -4,12 +4,6 @@ body {
   background-color: #fce4f7;
   color: #333;
 }
-
-section {
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
 .linha-separadora {
   height: 3px;
   width: 100%;
