@@ -8,12 +8,14 @@ import Portfolio from './components/Portfolio';
 import Servicos from './components/Servicos';
 import Cursos from './components/Cursos';
 import Contato from './components/Contato';
+import Faq from './components/Faq';
 import Footer from './components/Footer';
 
 import GaleriaFotos from './pages/GaleriaFotos';
 import GaleriaVideos from './pages/GaleriaVideos';
 
 import './App.css';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -47,6 +49,7 @@ function App() {
               <Portfolio />
               <Servicos />
               <Cursos />
+              <Faq />
               <Contato />
             </>
           }

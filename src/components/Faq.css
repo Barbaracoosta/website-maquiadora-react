@@ -1,0 +1,118 @@
+#faq{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  text-align: center;
+  color: #090909;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+}
+.Faq-titulo {
+  font-size: 2.8rem;
+  background: linear-gradient(135deg, #4a034b 0%, #a450d2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.Faq-titulo::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
+  border-radius: 2px;
+}
+
+.faq-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: #f9f1fb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: scale(1.01);
+}
+
+.faq-item.ativo {
+  background: #f3e4f7;
+  box-shadow: 0 4px 10px rgba(164, 80, 210, 0.2);
+}
+
+.faq-pergunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #4a034b;
+}
+
+.faq-resposta {
+  margin-top: 1rem;
+  color: #5a5a5a;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.faq-contato {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.faq-contato p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #4a034b;
+  font-weight: 500;
+}
+
+.btn-wpp {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
+  color: #fff;
+  padding: 0.9rem 1.6rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(164, 80, 210, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-wpp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(164, 80, 210, 0.4);
+}
+
+.icon-wpp {
+  margin-right: 0.6rem;
+  font-size: 1.2rem;
+}
