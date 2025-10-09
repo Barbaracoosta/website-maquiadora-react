@@ -13,7 +13,7 @@ function Footer() {
           <a href="#sobre">Sobre</a>
           <a href="#portfolio">Portfolio</a>
           <a href="#servico">Serviços</a>
-          <a href="#contato">Contato</a>
+          <a href="#faq">Faq</a>
         </div>
         <div className="footer-socials">          
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
