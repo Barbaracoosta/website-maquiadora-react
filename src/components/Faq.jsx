@@ -61,7 +61,7 @@ export default function Faq() {
       <div className="faq-contato">
         <p>Não achou sua dúvida?</p>
         <a
-          href="https://wa.me/5581999999999" 
+          href="https://wa.me/+5581988782834"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-wpp"
