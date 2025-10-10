@@ -11,7 +11,7 @@ function Contato() {
         </div>
         <div className="contato-conteudo">  
           <h2 className="contato-titulo">Contato</h2>        
-          <p>Entre em contato pelos canais:</p>
+          <p>Vamos agendar o seu dia da beleza?</p>
 
           <div className="cards-container">
             <a href="https://wa.me/+5581988782834" target="_blank" rel="noopener noreferrer" className="contato-card">

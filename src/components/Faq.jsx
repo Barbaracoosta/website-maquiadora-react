@@ -5,6 +5,11 @@ import "./Faq.css";
 
 const faqs = [
   {
+    pergunta: "Você faz maquiagem com efeito natural?",
+    resposta:
+      "Sim! A maquiagem natural é uma das minhas especialidades. Ela realça a beleza sem pesar, deixando a pele leve, com aspecto saudável e iluminado. Ideal para quem quer um visual elegante e delicado, perfeito para o dia a dia ou eventos mais sutis realçando sua beleza com naturalidade.”",
+  },
+  {
     pergunta: "Qual é o valor da maquiagem social?",
     resposta:
       "Os valores variam conforme o tipo de maquiagem e o serviço desejado. Entre em contato para receber um orçamento personalizado.",
@@ -17,7 +22,7 @@ const faqs = [
   {
     pergunta: "Quanto tempo antes devo agendar meu horário?",
     resposta:
-      "O ideal é agendar com pelo menos 2 a 3 semanas de antecedência para garantir o melhor horário.",
+      "O ideal é agendar com pelo menos 1 semana de antecedência para garantir o melhor horário.",
   },
   {
     pergunta: "Você faz maquiagem para fotos e ensaios?",
