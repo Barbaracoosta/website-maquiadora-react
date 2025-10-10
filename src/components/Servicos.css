@@ -62,9 +62,10 @@
   box-shadow: 0 0 25px #e698e6;
   background-color: #fff0fa;
 }
+
 .mais-info-servico {
-  background: #eedfe3;
-  color: #a450d2;
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
+  color: #fce4f7;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   text-decoration: none;
@@ -74,6 +75,9 @@
   gap: 0.5rem; 
   font-weight: bold;
   transition: background-color 0.3s ease;
+  outline: none;
+  cursor: pointer;
+  border: none;
 }
 
 .mais-info-servico:hover {
@@ -96,5 +100,97 @@
 @media (max-width: 480px) {
   .cards-servicos {
     grid-template-columns: 1fr;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(223, 88, 225, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 20px;
+  border: 2px solid #a450d2;
+  box-shadow: 0 0 25px rgba(164, 80, 210, 0.4);
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h3 {
+  color: #a450d2;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: #4a034b;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.btn-fechar {
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
+  border: none;
+  color: #69089e;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-fechar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffb6c1, 0 0 15px #a450d2;
+}
+
+.btn-agendar-servico {
+  background: linear-gradient(90deg, #ffb6c1, #a450d2);
+  border: none;
+  color: #69089e;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn-agendar-servico:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #a450d2, 0 0 15px #ffb6c1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 1.2rem;
+  }
+
+  .btn-fechar {
+    width: 100%;
   }
 }
