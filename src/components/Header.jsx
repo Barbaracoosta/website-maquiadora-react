@@ -257,7 +257,7 @@ function Header() {
                     className="btn-agendar-mobile"
                     onClick={fecharMenu}
                   >
-                    Agende seu horário
+                    Agende um horário
                   </Link>
 
                   <div className="social-links">

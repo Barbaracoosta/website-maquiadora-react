@@ -8,9 +8,9 @@ function Hero() {
       <div className="hero-content">
         <h1>
           Pâmella Borba
-          <span className="subtitle">Maquiadora</span>
+          <span className="subtitle">Beleza com propósito!💜</span>
         </h1>
-        <p className="hero-frase">Beleza com propósito!</p>
+        <p className="hero-frase">Maquiagem profissional e consultoria de pele personalizada</p>       
         <a href="#portfolio" className="btn-hero">Conheça meu trabalho</a>
       </div>
     </section>
