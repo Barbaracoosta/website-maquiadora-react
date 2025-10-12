@@ -31,12 +31,10 @@
 .cards-servicos {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 3rem; 
-  justify-content: center; 
+  gap: 3rem;    
   justify-items: center;
   margin-top: 2rem;  
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 1000px;
   text-align: center;
 }
@@ -80,8 +78,7 @@
   border: none;
 }
 
-.mais-info-servico:hover {
-  background: linear-gradient(90deg, #a450d2, #ffb6c1);  
+.mais-info-servico:hover {   
   color: #4a034b;
   box-shadow: 0 0 10px #ffb6c1, 0 0 20px #a450d2;
   transform: scale(1.05);
@@ -97,11 +94,7 @@
   }
 }
 
-@media (max-width: 480px) {
-  .cards-servicos {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 .modal-overlay {
   position: fixed;
@@ -121,12 +114,15 @@
   background: #fff;
   border-radius: 20px;
   border: 2px solid #a450d2;
-  box-shadow: 0 0 25px rgba(164, 80, 210, 0.4);
-  padding: 2rem;
+  box-shadow: 0 0 25px rgba(164, 80, 210, 0.4);  
   max-width: 400px;
   width: 90%;
   text-align: center;
   animation: fadeIn 0.3s ease;
+  overflow: hidden;
+  padding: 2rem 1.5rem;  
+  box-sizing: border-box;
+  position: relative;  
 }
 
 .modal-content h3 {
@@ -140,37 +136,65 @@
   line-height: 1.5;
 }
 
-.btn-fechar {
-  background: linear-gradient(90deg, #a450d2, #ffb6c1);
-  border: none;
-  color: #69089e;
-  padding: 0.6rem 1.2rem;
-  border-radius: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.botoes-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;  
+  margin-top: 1.5rem;
 }
 
-.btn-fechar:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #ffb6c1, 0 0 15px #a450d2;
+.btn-fechar-x {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #a450d2;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  z-index: 10;
+  border-radius: 50%;
+  width: 30px;           
+  height: 30px; 
+  align-items: center;      
+  justify-content: center;               
+  line-height: 1; 
+  display: flex;
 }
+
+.btn-fechar-x:hover {
+  color: #f50505;
+  transform: scale(1.2);
+}
+
 
 .btn-agendar-servico {
+  width: 200px; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 45px;
+  padding: 0 1.2rem;
+  border-radius: 25px;  
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;  
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
   background: linear-gradient(90deg, #ffb6c1, #a450d2);
   border: none;
-  color: #69089e;
-  padding: 0.6rem 1.2rem;
-  border-radius: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-left: 10px;
+  color: #fce4f7;
+  font-weight: 700;
+  max-width: 100%;
+  box-sizing: border-box;  
 }
 
 .btn-agendar-servico:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #a450d2, 0 0 15px #ffb6c1;
+  box-shadow: 0 0 15px #a450d2, 0 0 15px #ffb6c1; 
+  color:#4a034b 
 }
 
 @keyframes fadeIn {
@@ -178,19 +202,44 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+@media (max-width: 480px) {
+  .botoes-modal {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  
+  .btn-agendar-servico {
+    width: 100%;
+    height: 48px;
+    font-size: 1rem;
+  }
+
+  .modal-content {
+    padding: 1.2rem;
+  }
+
+  .cards-servicos {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 @media (max-width: 768px) {
   .modal-content {
     max-width: 90%;
     padding: 1.5rem;
   }
-}
-
-@media (max-width: 480px) {
-  .modal-content {
-    padding: 1.2rem;
+  
+  .botoes-modal {
+    flex-direction: column;
+    gap: 0.8rem;
   }
-
-  .btn-fechar {
+  
+  .btn-agendar-servico {
     width: 100%;
+    height: 48px;
+    font-size: 1rem;
   }
 }
+
