@@ -8,7 +8,8 @@ function Sobre() {
       <div className="texto-sobre">
         <h2>Sobre Mim</h2>
         <p>
-          Sou <strong>Pâmella Borba</strong>, maquiadora profissional e apaixonada por valorizar a beleza de cada mulher.
+          Sou <strong>Pâmella Borba</strong>, maquiadora profissional e apaixonada por valorizar a beleza unica de cada mulher.
+          Através da <strong>maquiagem profissional</strong> e da <strong>consultoria de pele personalizada</strong>, ajudo minhas clientes a realçar o que já existe de mais bonito: sua própria essência.
           Com amor, técnica e muito brilho, levo autoestima e elegância para todas as ocasiões.
         </p>
         <h2> Minha jornada </h2>
