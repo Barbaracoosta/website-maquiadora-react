@@ -111,7 +111,7 @@
 }
 
 .btn-agendar {
-  background-color: #a450d2;
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
   color: #d8d3d3; 
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -336,7 +336,7 @@
 }
 
 .btn-agendar-mobile {
-  background-color: var(--primary-color);
+  background: linear-gradient(90deg, #a450d2, #ffb6c1);
   color: #d8d3d3; 
   padding: 1rem;
   border-radius: 30px;
