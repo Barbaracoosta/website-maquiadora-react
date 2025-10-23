@@ -138,10 +138,7 @@
 
 @media (max-width: 768px) {
 
-  #portfolio h2 {
-    font-size: 2rem;     
-  }
-
+  
   #portfolio h2::after{
     width: 50px;
     height: 3px;
