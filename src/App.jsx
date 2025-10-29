@@ -15,6 +15,7 @@ import GaleriaFotos from './pages/GaleriaFotos';
 import GaleriaVideos from './pages/GaleriaVideos';
 
 import './App.css';
+import Depoimentos from './components/Depoimentos';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
               <Portfolio />
               <Servicos />
               <Cursos />
+              <Depoimentos />
               <Faq />
               <Contato />
             </>
