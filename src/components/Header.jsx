@@ -98,19 +98,9 @@ function Header() {
               </div>
             </div>
 
-            <div className="submenu-container">
-              <Link smooth to="/#servicos" className="nav-link">
-                Serviços
-              </Link>
-              <div className="submenu">
-                <Link smooth to="/#serviço1" className="submenu-link">
-                  Serviços 1
-                </Link>
-                <Link smooth to="/#servico2" className="submenu-link">
-                  Serviços 2
-                </Link>
-              </div>
-            </div>
+            <Link smooth to="/#servicos" className="nav-link">
+              Serviços
+            </Link>
 
             <Link smooth to="/#cursos" className="nav-link">
               Cursos
@@ -197,49 +187,15 @@ function Header() {
                     </Link>
                   </div>
                 </div>
-
-                <div className="submenu-mobile-container">
-                  <div
-                    className="submenu-mobile-header"
-                    onClick={() => abrirSubmenu("servicos")}
-                    aria-expanded={activeSubmenu === "servicos"}
-                  >
-                    <span>Serviços</span>
-                    <span
-                      className={`submenu-arrow ${
-                        activeSubmenu === "servicos"
-                          ? "submenu-arrow--active"
-                          : ""
-                      }`}
-                    >
-                      ▼
-                    </span>
-                  </div>
-                  <div
-                    className={`submenu-mobile ${
-                      activeSubmenu === "servicos"
-                        ? "submenu-mobile--active"
-                        : ""
-                    }`}
-                  >
-                    <Link
-                      smooth
-                      to="/#serviço1"
-                      className="submenu-link-mobile"
-                      onClick={fecharMenu}
-                    >
-                      Serviços 1
-                    </Link>
-                    <Link
-                      smooth
-                      to="/#servico2"
-                      className="submenu-link-mobile"
-                      onClick={fecharMenu}
-                    >
-                      Serviços 2
-                    </Link>
-                  </div>
-                </div>
+                
+                <Link
+                  smooth
+                  to="/#servicos"
+                  className="nav-link-mobile"
+                  onClick={fecharMenu}
+                >
+                  Serviços
+                </Link>
 
                 <Link
                   smooth
