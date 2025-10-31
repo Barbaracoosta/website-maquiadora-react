@@ -123,14 +123,14 @@ function Depoimentos() {
     <section id="depoimentos">
       <div className="depoimentos-container">
         <div className="depoimentos-header">
-          <h2>O que dizem minhas clientes</h2>
+          <h2>Depoimentos</h2>
           <p className="depoimentos-subtitle">Beleza com propósito 💜</p>
 
           <div className="depoimentos-rating-overview">
             {[...Array(5)].map((_, i) => (
               <FaStar key={i} className="estrela-ativa" size={14} />
             ))}
-            <span>5.0 baseado em +40 avaliações</span>
+            <span>5.0 baseado em +30 avaliações</span>
           </div>
         </div>
 
