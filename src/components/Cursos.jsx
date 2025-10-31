@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BsArrowRightCircle } from "react-icons/bs";
+import fundo from '../assets/pam-capa2.jpg';
 import "./Cursos.css";
 
 function Cursos() {
@@ -43,7 +44,7 @@ function Cursos() {
   };
 
   return (
-    <section id="cursos">
+    <section id="cursos" style={{ backgroundImage: `url(${fundo})` }}>
       <h2>Cursos</h2>
       <div className="lista-cursos">
         {cursos.map((curso, index) => (

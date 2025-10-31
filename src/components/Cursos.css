@@ -1,7 +1,34 @@
 #cursos {
-  background: #fce4f7;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   text-align: center;
+  color: #090909;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+#cursos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.6) 10%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.6) 90%
+  );
+  z-index: 0;
+}
+
+#cursos > * {
+  position: relative;
+  z-index: 1;
 }
 
 #cursos h2 {
