@@ -50,15 +50,31 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;  
 }
 
+.card-servico::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.7s ease;
+}
+
+.card-servico:hover::before {
+  left: 100%;
+}
+
 .card-servico h3 {
   color: #a450d2;
   margin-bottom: 0.5rem;
 }
 
 .card-servico:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px #e698e6;
-  background-color: #fff0fa;
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(218, 97, 251, 0.3);
+  border-color: #de21ef;
+  background: linear-gradient(135deg, rgba(215, 97, 251, 0.1), rgba(212, 0, 184, 0.2));
 }
 
 .mais-info-servico {
