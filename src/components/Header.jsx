@@ -40,6 +40,20 @@ function Header() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [menuOpen]);
+
+
   const abrirMenu = () => {
     setMenuAberto(!menuOpen);
     setSubmenuAtivo(null);

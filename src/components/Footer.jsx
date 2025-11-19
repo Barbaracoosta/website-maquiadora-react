@@ -16,7 +16,7 @@ function Footer() {
           <a href="#faq">Faq</a>
         </div>
         <div className="footer-socials">          
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/pamellaborba" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <FaInstagram />
           </a>
 
