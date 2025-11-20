@@ -44,12 +44,15 @@ function Header() {
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
+      document.body.style.paddingTop = "calc(env(safe-area-inset-top))";
     } else {
       document.body.style.overflow = "auto";
+      document.body.style.paddingTop = "0";
     }
 
     return () => {
       document.body.style.overflow = "auto";
+      document.body.style.paddingTop = "0";
     };
   }, [menuOpen]);
 

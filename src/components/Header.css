@@ -16,7 +16,10 @@
   padding: 1rem 2rem;
   padding-top: env(safe-area-inset-top);
   padding-top: constant(safe-area-inset-top);
-}
+  
+}.header::-webkit-safe-area-inset-top {
+  padding-top: env(safe-area-inset-top);
+} 
 
 .header nav {
   display: flex;
@@ -37,7 +40,8 @@
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+  margin-top: 10px;
 }
 
 .logo:hover {
