@@ -14,6 +14,8 @@
   z-index: 100;
   box-sizing: border-box;
   padding: 1rem 2rem;
+  padding-top: env(safe-area-inset-top);
+  padding-top: constant(safe-area-inset-top);
 }
 
 .header nav {
@@ -198,6 +200,8 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  padding-top: env(safe-area-inset-top);
+  padding-top: constant(safe-area-inset-top);
 }
 
 .nav-menu-mobile--active {
