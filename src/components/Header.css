@@ -46,6 +46,11 @@
   border-color: rgba(255, 255, 255, 0.6);
 }
 
+.nav-menu-mobile .nav-menu-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .nav-menu-desktop {
   display: flex;
   align-items: center;
@@ -337,7 +342,8 @@
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
+  margin-bottom: 8rem;
 }
 
 .btn-agendar-mobile {
@@ -347,6 +353,7 @@
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
+  font-size: 1.2rem;
   font-weight: 500;  
   box-shadow: var(--shadow);
   transition: var(--transition);
@@ -370,18 +377,18 @@
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.5rem;  
 }
 
 .social-links a {  
-  color: #d8d3d3;  
+  color: #d8d3d3;   
   font-size: 2rem; 
-  display: flex;
+  display: flex;  
   align-items: center;
   justify-content: center;
   width: 45px;
   height: 45px;
-  border-radius: 50%;
+  border-radius: 50%;  
   background: rgba(255, 255, 255, 0.2);
   transition: var(--transition);
 }
@@ -410,7 +417,8 @@
   .nav-menu-desktop {
     display: none;
   }
-  .logo-link {
+
+  .logo-link {     
     margin-right: 0.5rem; 
   }
 }
