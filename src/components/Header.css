@@ -15,10 +15,7 @@
   box-sizing: border-box;
   padding: 1rem 2rem;
   padding-top: env(safe-area-inset-top);
-  padding-top: constant(safe-area-inset-top);
-  
-}.header::-webkit-safe-area-inset-top {
-  padding-top: env(safe-area-inset-top);
+  padding-top: constant(safe-area-inset-top);  
 } 
 
 .header nav {
@@ -401,15 +398,20 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1001;
+    z-index: 1001;  
+    padding: 1rem 1.5rem;   
   }  
   
   .hamburger {
     display: flex;
+    margin-left: 0.5rem;
   }
   
   .nav-menu-desktop {
     display: none;
+  }
+  .logo-link {
+    margin-right: 0.5rem; 
   }
 }
 
