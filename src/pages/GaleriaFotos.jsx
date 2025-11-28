@@ -14,10 +14,17 @@ function GaleriaFotos() {
 
       <div className="grid-fotos">
         {[
-          "make1.jpeg","make1-1.jpeg","make2-2.jpeg","make2.jpeg","make2-1.jpeg",
-          "make3.jpeg","make3-1.jpeg","make4.jpeg","make5.jpeg","make6.jpeg",
-          "make6-2.jpeg","make6-3.jpeg","make6-4.jpeg",
-          "make7.jpeg","make8.jpeg","make9.jpeg","make10.jpeg"
+          "make01-1.jpg","make01-2.jpg","make01-3.jpg","make01-4.jpg",
+          "make1.jpeg","make1-1.jpeg",
+          "make5.jpeg",
+          "make02.jpg","make02-1.jpg",
+          "make02-2.jpg", "make02-3.jpg", 
+          "make6-3.jpeg","make6-4.jpeg", "make6.jpeg","make6-2.jpeg",
+          "make2-2.jpeg","make2.jpeg","make2-1.jpeg",
+          "make3.jpeg","make3-1.jpeg",          
+          "make03.jpg","make03-1.jpg","make03-2.jpg", "make03-3.jpg",
+          "make7.jpeg",          
+          "make8.jpeg","make9.jpeg","make4.jpeg",
         ]
         .map((foto, i) => (
           <img 
